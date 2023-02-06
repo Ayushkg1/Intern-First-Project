@@ -56,7 +56,7 @@ class Navbar extends HTMLElement {
             this.querySelector('#' + id).classList.add('selected');
             this.querySelector('#' + id.substr(0, 6) + 'posts').classList.remove('selected');
             showProfiles();
-            document.querySelector('#all__user__posts') = "";
+            document.querySelector('#all__user__posts').innerHTML = "";
         }
     }
 
