@@ -1,0 +1,148 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+header{
+    margin: auto;
+    width: 80%;
+    margin-top: 20px;
+    display: flex;
+    border-radius: 10px;
+}
+
+.heading {
+    width: 70%;
+    font-size: 2.5rem;
+    margin: auto;
+    text-align: center;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    letter-spacing: 1.5px;
+    color:brown;
+}
+
+.logout {
+    display: block;
+    margin: auto;
+    width: 150px;
+    font-size: 1.5rem;
+    text-decoration: none;
+    text-align: center;
+    padding: 7px;
+    height: fit-content;
+    border-radius: 5px;
+    border: 1px solid salmon;
+    background-color: lightpink;
+    box-shadow: inset 1px 1px 2px rgba(255, 255, 255, 0.6),
+                  inset -1px -1px 2px rgba(0, 0, 0, 0.6),
+                  1px 1px 3px black;
+}
+
+.navbar{
+    width: 70%;
+    margin: auto;
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+    margin-top: 5vh;
+    background-color: aliceblue;
+    border-bottom: 1px solid salmon;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.navbar li{
+    font-size: 1.5rem;
+    font-weight: 800;
+    padding: 10px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.selected {
+    border-bottom:3px solid salmon;
+    padding-bottom:2px;
+}
+
+.user-template {
+    width: 70%;
+    border-bottom: 1px solid salmon;
+    background-color: rgb(245, 245, 245);
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 8px;
+    display: flex;
+}
+
+.user-image img{
+    width: 150px;
+    margin-left: 15%;
+}
+
+.user-details {
+    margin-left: 8%;
+    font-size: 1.2rem;
+    font-weight: 550;
+    line-height: 2rem;
+}
+
+.delete-user {
+    font-size: 1.2rem;
+    font-weight: 550;
+    margin: auto 20px auto auto;
+    padding: 8px;
+    height: fit-content;
+    border-radius: 5px;
+    border: 1px solid salmon;
+    background-color: lightpink;
+    box-shadow: inset 1px 1px 2px rgba(255, 255, 255, 0.6),
+                  inset -1px -1px 2px rgba(0, 0, 0, 0.6),
+                  1px 1px 3px black;
+    cursor: pointer;
+}
+
+.post-template {
+    width: 70%;
+    border-bottom: 1px solid salmon;
+    background-color: rgb(245, 245, 245);
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.post-heading {
+    margin-left: 40px;
+    font-size: 1.5rem;
+    padding: 10px;
+}
+
+.post-content {
+    width: 90%;
+    margin: 15px auto;
+    text-indent: 50px;
+    line-height: 24px;
+    text-align: justify;
+}
+
+.controller-buttons{
+    width: 100%;
+    margin: 10px 20px 10px auto;
+}
+
+.delete-button {
+    padding: 5px;
+    top: 3%;
+    margin-left: 85%;
+    border-radius: 5px;
+    border: 1px solid salmon;
+    background-color:lightpink ;
+    font-size: 14px;
+    font-size: 18px;
+    padding: 10px 15px;
+    box-shadow: inset 1px 1px 2px rgba(255, 255, 255, 0.6),
+                  inset -1px -1px 2px rgba(0, 0, 0, 0.6),
+                  1px 1px 3px black;
+    cursor: pointer;
+}

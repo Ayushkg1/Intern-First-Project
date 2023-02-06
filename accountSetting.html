@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>account setting or edit profile - Bootdey.com</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="styles/accountSetting.css">
+    <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script type="text/javascript" src="javaScripts/accountSettings.js" defer></script>
+</head>
+
+<body>
+    <update-details>
+        <h2 id="back__button"><a href="mainPage.html">&#8592;</a></h2>
+        <div class="user-section">
+            <div class="picture-section">
+                <img src="assets/abstract-user-flat-3.webp" alt="User Image" class="my-profile-image" id="user-image">
+                <button class="upload-button" id="edit__button">Edit Picture</button>
+            </div>
+            <!-- <div class="profile-content">
+                <div class="profile-head">
+                    <img src="images/signup.png" alt="" class="my-profile-image">
+                    <input type="file" id="file-img">
+                </div>
+                <div class="information">
+                    <p id="my-profile-id"></p>
+                    <form action="" onsubmit="noRefresh(event)">
+                        <label for="name" id="lebel">Name :</label>
+                        <input type="text" id="my-profile-name" required>
+                        <label for="email" id="lebel">Email :</label> <input type="email" id="my-profile-email"
+                            required>
+                        <div class="profile-btn">
+                            <button id="close-profile-popup" onclick="closePopup()">cancel</button>
+                            <button type="submit" id="update-btn">Update</button>
+                        </div>
+                    </form>
+
+                </div> -->
+
+
+                <div class="user-details">
+                    <form class="update-form" role="form" id="update__form" autocomplete="off">
+                        <label class="form-group">
+                            <span>Email :</span>
+                            <input type="email" name="email" id="user__email" required>
+                        </label>
+                        <label class="form-group">
+                            <span>Name :</span>
+                            <input type="text" name="name" id="user__name" required>
+                        </label>
+                        <label class="form-group">
+                            <span>Phone :</span>
+                            <input type="text" name="phone" id="user__phone" pattern="[789][0-9]{9}" required>
+                        </label>
+                        <button type="submit" class="submit-form">Update</button>
+                    </form>
+                </div>
+            </div>
+    </update-details>
+</body>
+
+</html>

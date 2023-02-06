@@ -1,0 +1,348 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-size: 10px;
+  }
+  
+  body {
+    font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+    background: #ffffff;
+  }
+  
+  nav {
+    background-color: #333;
+  }
+  
+  .heading{
+    width: 92%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .user-view{
+    display: flex;
+    width: 20%;
+    align-items: center;
+  }
+  
+  #user__image{
+    width: 7rem;
+    margin: 2%;
+    border-radius: 50%;
+  }
+  
+  #user__profile a{
+    font-size: 1.8rem;
+    right: 8%;
+    top: 6%;
+    text-decoration: none;
+    color:sienna;
+    font-weight: 1000;
+  }
+  
+  h1 {
+    padding-left: 15%;
+    font-family: 'Georgia';
+    font-size: 5rem;
+    line-height: 10rem;
+    letter-spacing: 5px;
+    word-spacing: 10px;
+    color:chocolate;
+  }
+  
+  ul {
+    list-style-type: none;
+    margin: auto;
+    padding: 0;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+  }
+  
+  li {
+    display: block;
+    color: white;
+    font-size: 1.8rem;
+    font-weight: 600;
+    text-align: center;
+    padding: 14px 25px;
+    text-decoration: none;
+    flex: left;
+  }
+  
+  nav ul li a{
+    font-size: 1.8rem;
+    font-weight: 600;
+    text-align: center;
+    color: white;
+    text-decoration: none;  
+  }
+  
+  li:hover {
+    background-color: #111;
+    cursor: pointer;
+  }
+  
+  #logout {
+    margin-left: auto;
+  }
+  
+  main{
+    position: relative;
+  }
+  
+  .popup{
+    z-index: 2;
+    width: 99%;
+    height: 100%;
+    position: fixed;
+    top: 55%;
+    display: none;
+    justify-content: end;
+  }
+  
+  .popup-content{
+    height: 320px;
+    width: 600px;
+    background:lavenderblush ;
+    padding: 20px;
+    border-radius: 5px;
+    position: relative;
+    border: 1px solid salmon;
+  }
+  
+  input[name='heading']{
+    margin: 0 auto 10px;
+    font-size: 1.8rem;
+    padding: 10px;
+    border-radius: 5px;
+    display: block;
+    border: 1px solid salmon;
+    font-weight: 800;
+  }
+  
+  input::placeholder{
+    text-align: center;
+  }
+  
+  textarea{
+    margin: 10px auto;
+    font-size: 1.6rem;
+    padding: 10px;
+    border-radius: 5px;
+    width: 100%;
+    display: block;
+    border: 1px solid salmon;
+    resize: none;
+  }
+  
+  .post-adder{
+    margin: 0 auto;
+    display: block;
+    font-size: 1.7rem;
+    padding: 8px 20px;
+    border-radius: 5px;
+    border: 1px solid salmon;
+    float: right;
+    background-color:lightpink ;
+  }
+  
+  button:hover{
+    cursor: pointer;
+    background-color: darksalmon;
+  }
+  
+  .post-area{
+    width: 70%;
+    margin: 30px auto;
+  }
+  
+  .post-template{
+    position: relative;
+    border: 1px solid salmon;
+    border-radius: 5px;
+    box-shadow:  2px 2px 5px black;
+    margin: 30px;
+  }
+  
+  .post-area h2{
+    width: 90%;
+    margin: auto;
+    font-size: 2rem;
+    line-height: 3rem;
+    font-weight: 800;
+    letter-spacing: 1.5px;
+    word-spacing: 2px;
+    padding: 20px 0;
+    text-decoration: underline;
+  }
+  
+  .post-area p{
+    width: 90%;
+    margin: auto;
+    text-indent: 30px;
+    font-size: 16px;
+    text-align: justify;
+    line-height: 24px;
+    padding-bottom: 20px;
+  }
+  
+  .posted-date {
+    position: absolute;
+    font-weight: 800;
+    /* width: 20%; */
+    z-index: -1;
+  }
+
+  .controller{
+    display: flex;
+    width: 30%;
+    margin-left: 70%;
+  }
+  
+  .like-area{
+    width: 30%;
+    display: flex;
+  }
+  
+  .like-button{
+    font-size: 2rem;
+    margin-bottom: 15px;
+    text-align: center;
+    letter-spacing: 2px;
+    margin: 2px 0 15px 30px;
+  }
+  
+  .liked {
+    color: indianred;
+  }
+  
+  .unliked {
+    color:lightpink;
+  }
+  
+  .like-button:hover{
+    color: indianred;
+  }
+  
+  .like-counter{
+    font-size: 1.8rem;
+    color:indianred;
+    margin: 6px 0 15px 10px;
+  }
+  
+  .like-button:hover{
+    cursor:pointer;
+  }
+  
+  
+  
+  .comment-button{
+    width: 62%;
+    margin-left: 32%;
+    margin-right: 5%;
+    margin-bottom: 15px;
+    font-size: 1.7rem;
+    padding: 5px;
+    text-align: center;
+    border-radius: 5px;
+    border: 1px solid salmon;
+    background-color: lightpink;
+    box-shadow: inset 1px 1px 2px rgba(255, 255, 255, 0.6),
+                  inset -1px -1px 2px rgba(0, 0, 0, 0.6),
+                  1px 1px 3px black;
+  }
+  
+  .comment-section{
+    width: 80%;
+    margin: 0 auto;
+    display: none;
+    height: 325px;
+    position: relative;
+    transition: 1s;
+  }
+  
+  .comment-section.show-comment-section{
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .comment-heading{
+    font-size: 2rem;
+    padding-left: 5%;
+    color:royalblue;
+  }
+  
+  .user-comments{
+    border: 1px solid salmon;
+    border-radius: 5px;
+    margin: 5px auto;
+    width: 100%;
+    height: 225px;
+    overflow: auto;
+  }
+  
+  .user-name{
+    font-size: 1.6rem;
+    margin: 5px 15px;
+    text-decoration: underline;
+    text-decoration-style: 1px solid;
+  }
+  
+  .user-comments p{
+    font-size: 14px;
+    text-indent: 10%;
+  }
+  
+  .line-break{
+    width: 90%;
+    margin: auto;
+    margin-bottom: 15px;
+  }
+  
+  .line-break:last-child{
+    visibility:hidden;
+  }
+  
+  .comment-form{
+    display: flex;
+    width: 100%;
+    margin: 8px auto;
+  }
+  
+  .write-comment{
+    font-size: 14px;
+    border: 1px solid salmon;
+    border-radius: 5px;
+    width: 80%;
+    margin: 0 5px;
+    padding: 5px;
+  }
+  
+  .submit-comment{
+    width: 18%;
+    padding: 5px;
+    background-color: lightpink;
+    border: 1px solid salmon;
+    border-radius: 3px;
+    font-size: 14px;
+    margin: 0 1px;
+    box-shadow: inset 1px 1px 2px rgba(255, 255, 255, 0.6),
+                  inset -1px -1px 2px rgba(0, 0, 0, 0.6),
+                  1px 1px 3px black;
+  }
+  
+  
+  .comment-closer{
+    position: absolute;
+    padding: 5px;
+    top: 3%;
+    left: 90%;
+    border-radius: 5px;
+    border: 1px solid salmon;
+    background-color:lightpink ;
+    font-size: 14px;
+  }

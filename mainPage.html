@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/mainPage.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script type="text/javascript" src="javaScripts/mainPage.js" defer></script>
+    <title>Idea Share</title>
+</head>
+
+
+<body>
+    <head-er>
+        <shadow-timer>
+            
+        </shadow-timer>
+        <div class="heading">
+            <h1>Welcome to Idea Share</h1>
+            <div class="user-view">
+                <img src="assets/abstract-user-flat-3.webp" alt="user-image" id="user__image">
+                <h3 id="user__profile"><a href="accountSetting.html">My Profile</a></h3>
+            </div>
+        </div>
+        <nav>
+            <ul>
+                <li id="add__post__button">Add Post</li>
+                <li><a href="myPost.html">My Posts</a></li>
+                <li id="logout">Logout</li>
+            </ul>
+        </nav>
+    </head-er>
+
+    <post-display>
+        <div class="popup">
+            <div class="popup-content">
+                <button id="close__popup" class="post-adder">&#10060;</button>
+                <form role="form" id="form__add__post" autocomplete="off">
+                    <label class="form-group">
+                        <input type="text" name="heading" id="post__heading" maxlength="50" placeholder="Topic of Idea"
+                            required>
+                    </label>
+                    <label class="form-group">
+                        <textarea id="post__content" name="content" rows="8" cols="15" placeholder="Write your idea"
+                            required></textarea>
+                    </label>
+                    <button type="submit" class="post-adder">Add Post</button>
+                </form>
+            </div>
+        </div>
+
+
+        <div id="post__display" class="post-area">
+
+            <!-- All the posts are added in this tag dynamically -->
+            <!-- <div class="post-template">
+                <h2 class="post-heading">Sleep Cycle</h2>
+                <p class="post-content">
+                    The sleep cycle is an oscillation between the slow-wave and REM (paradoxical) phases of sleep. It is sometimes called the ultradian sleep cycle, sleep–dream cycle, or REM-NREM cycle, to distinguish it from the circadian alternation between sleep and wakefulness.
+                </p>
+                <div class="controller">
+                    <h3 class="like-area"><span class="like-button unliked">&#x2764;</span> <span class="like-counter">2</span></h3>
+                    <button class="comment-button">Comment</button>
+                </div>
+                <hr> -->
+                <!-- <br><br>
+                <div class="comment-section show-comment-section">
+                    <h3 class="comment-heading">Welcome to Comment Section</h3>
+                    <button class="comment-closer">&#10060;</button>
+                    <div class="user-comments">
+                        <h4 class="user-name">Ayush Bhau</h4>
+                        <p class="user-comment-content">Kya baat hai bro! Gazab</p>
+                        <hr class="line-break">
+                        <h4 class="user-name">Ayush Bhau</h4>
+                        <p class="user-comment-content">Kya baat hai bro! Gazab</p>
+                        <hr class="line-break">
+                        <h4 class="user-name">Ayush Bhau</h4>
+                        <p class="user-comment-content">Kya baat hai bro! Gazab</p>
+                        <hr class="line-break">
+                        <h4 class="user-name">Ayush Bhau</h4>
+                        <p class="user-comment-content">Kya baat hai bro! Gazab</p>
+                        <hr class="line-break">
+                    </div>
+                    <form role="form" class="comment-form" onsubmit="addComment(event);" autocomplete="off">
+                        <input type="text" name="comment" id="write__comment" placeholder="Write your comment..."
+                            maxlength="50" required>
+                        <button type="submit" class="submit-comment">Done</button>
+                    </form>
+                </div>
+            </div> -->
+        </div>
+        </post-display>
+
+</body>
+
+</html>

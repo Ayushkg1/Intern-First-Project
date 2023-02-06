@@ -1,0 +1,98 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-size: 10px;
+  }
+
+  body {
+    font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+    background: #ffffff;
+  }
+
+  header{
+     width: 90%;
+     display: flex;
+  }
+
+  h1 {
+    width: 70%;
+    text-align: center;
+    font-family: 'Georgia';
+    font-size: 5rem;
+    line-height: 10rem;
+    letter-spacing: 5px;
+    word-spacing: 10px;
+    color:chocolate;
+    text-decoration: underline;
+  }
+
+  header h2{
+    width: 30%;
+    margin: auto;
+    text-align: center;
+  }
+
+  h2 a{
+    color: black;
+    font-size: 5rem;
+    font-weight:1000;
+    text-decoration: none;
+  }
+
+  #post__display{
+    width: 70%;
+    margin: 30px auto;
+  }
+
+  .post-template{
+    position: relative;
+    border: 1px solid salmon;
+    border-radius: 10px;
+    box-shadow: 1px 1px 3px black;
+    margin: 30px;
+  }
+
+  #post__display h2{
+    width: 90%;
+    margin: auto;
+    font-size: 2rem;
+    line-height: 3rem;
+    font-weight: 800;
+    letter-spacing: 1.5px;
+    word-spacing: 2px;
+    padding: 20px 0;
+    text-decoration: underline;
+  }
+
+  #post__display p{
+    width: 90%;
+    margin: auto;
+    text-indent: 30px;
+    font-size: 16px;
+    text-align: justify;
+    line-height: 24px;
+  }
+
+  .control-buttons{
+    display: inline;
+    margin-left: 60%;
+    width: 50%;
+  }
+
+  .edit-button, .delete-button{
+    width: 16%; 
+    margin: 15px 1%;
+    font-size: 1.7rem;
+    padding: 5px 10px;
+    border-radius: 5px;
+    border: 1px solid salmon;
+    background-color: lightpink;
+    box-shadow: inset 1px 1px 2px rgba(255, 255, 255, 0.6),
+                  inset -1px -1px 2px rgba(0, 0, 0, 0.6),
+                  1px 1px 3px black;
+  }
+
+  button:hover{
+    cursor: pointer;
+  }

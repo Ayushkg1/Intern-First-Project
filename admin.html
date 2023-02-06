@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/admin.css">
+    <script type="text/javascript" src="javaScripts/admin.js" defer></script>
+    <title>Admin Panel</title>
+</head>
+
+<body>
+    <header>
+        <h1 class="heading">Welcome to Admin Panel</h1>
+        <a class="logout" href="index.html">Logout</a>
+    </header>
+    <main>
+        <nav-bar>
+            <ul class="navbar">
+                <li id="user__profiles" class="selected">User Profiles</li>
+                <li id="user__posts">User Posts</li>
+            </ul>
+        </nav-bar>
+        <all-users>
+            <div id="all__user__profiles">
+                <div class="user-template">
+                    <div class="user-image"><img src="assets/img_525162.png" alt="Image view"></div>
+                    <div class="user-details">
+                        <div class="user-name">Ayush</div>
+                        <div class="user-email">ag12@gmail.com</div>
+                        <div class="phone">9897099999</div>
+                        <div class="pwd">Ayush123</div>
+                    </div>
+                    <button class="delete-user">Delete User</button>
+                </div>
+            </div>
+        </all-users>
+        <all-posts>
+            <div id="all__user__posts">
+                <!-- <div class="post-template">
+                    <div class="post-data">
+                        <h2 class="post-heading">Sleep</h2>
+                        <p class="post-content" id="content${postDetails['id']}">An important activity</p>
+                    </div>
+                    <div class="control-buttons">
+                        <button class="delete-button" id="delete${postDetails['id']}">Delete</button>
+                    </div>
+                </div> -->
+            </div>
+        </all-posts>
+    </main>
+
+</body>
+
+</html>
