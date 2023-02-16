@@ -62,8 +62,9 @@ class UpdateDetails extends HTMLElement {
         console.log(url);
         localStorage.setItem('formData', JSON.stringify(updatedFormData));
         console.log(updatedFormData);
-        sessionStorage.clear();
-        location.href = 'index.html';
+//         sessionStorage.clear();
+//         location.href = 'index.html';
+        location.reload();
     }
 
     updatePicture(e) {
